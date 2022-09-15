@@ -8,10 +8,10 @@ import (
 	"github.com/Masred/dasar-golang/golang-restful-api/app"
 	"github.com/Masred/dasar-golang/golang-restful-api/controller"
 	"github.com/Masred/dasar-golang/golang-restful-api/helper"
+	"github.com/Masred/dasar-golang/golang-restful-api/middleware"
 	"github.com/Masred/dasar-golang/golang-restful-api/repository"
 	"github.com/Masred/dasar-golang/golang-restful-api/service"
 	"github.com/go-playground/validator"
-	"github.com/julienschmidt/httprouter"
 )
 
 func main() {
@@ -22,17 +22,11 @@ func main() {
 	categoryService := service.NewCategoryService(categoryRepository, db, validate)
 	categoryController := controller.NewCategoryController(categoryService)
 
-	router := httprouter.New()
-
-	router.GET("/api/categories", categoryController.FindAll)
-	router.GET("/api/categories/:categoryId", categoryController.FindById)
-	router.POST("/api/categories", categoryController.Create)
-	router.PUT("/api/categories/:categoryId", categoryController.Update)
-	router.DELETE("/api/categories/:categoryId", categoryController.Delete)
+	router := app.NewRouter(categoryController)
 
 	server := http.Server{
 		Addr:    "localhost:3000",
-		Handler: router,
+		Handler: middleware.NewAuthMiddleware(router),
 	}
 
 	err := server.ListenAndServe()
