@@ -15,7 +15,7 @@ func IsSame[T comparable](value1, value2 T) bool {
 }
 
 func TestIsSame(t *testing.T) {
-	assert.True(t, IsSame[string]("masred", "masred"))
-	assert.True(t, IsSame[int](100, 100))
-	assert.True(t, IsSame[bool](true, true))
+	assert.True(t, IsSame("masred", "masred"))
+	assert.True(t, IsSame(100, 100))
+	assert.True(t, IsSame(true, true))
 }

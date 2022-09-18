@@ -13,9 +13,9 @@ func Length[T any](param T) T {
 }
 
 func TestSample(t *testing.T) {
-	var resultString string = Length[string]("Masred")
+	var resultString string = Length("Masred")
 	assert.Equal(t, "Masred", resultString)
 
-	var resultNumber int = Length[int](100)
+	var resultNumber int = Length(100)
 	assert.Equal(t, 100, resultNumber)
 }
