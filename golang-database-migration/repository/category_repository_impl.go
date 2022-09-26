@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/helper"
-	"github.com/Masred/dasar-golang/golang-restful-api/model/domain"
+	"github.com/Masred/dasar-golang/golang-database-migration/helper"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/domain"
 )
 
 type CategoryRepositoryImpl struct {

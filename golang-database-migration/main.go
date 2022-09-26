@@ -5,12 +5,12 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/app"
-	"github.com/Masred/dasar-golang/golang-restful-api/controller"
-	"github.com/Masred/dasar-golang/golang-restful-api/helper"
-	"github.com/Masred/dasar-golang/golang-restful-api/middleware"
-	"github.com/Masred/dasar-golang/golang-restful-api/repository"
-	"github.com/Masred/dasar-golang/golang-restful-api/service"
+	"github.com/Masred/dasar-golang/golang-database-migration/app"
+	"github.com/Masred/dasar-golang/golang-database-migration/controller"
+	"github.com/Masred/dasar-golang/golang-database-migration/helper"
+	"github.com/Masred/dasar-golang/golang-database-migration/middleware"
+	"github.com/Masred/dasar-golang/golang-database-migration/repository"
+	"github.com/Masred/dasar-golang/golang-database-migration/service"
 	"github.com/go-playground/validator"
 )
 

@@ -3,8 +3,8 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/helper"
-	"github.com/Masred/dasar-golang/golang-restful-api/model/web"
+	"github.com/Masred/dasar-golang/golang-database-migration/helper"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/web"
 )
 
 type AuthMiddleware struct {

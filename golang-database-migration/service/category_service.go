@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/model/web"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/web"
 )
 
 type CategoryService interface {

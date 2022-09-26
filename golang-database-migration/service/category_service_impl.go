@@ -4,11 +4,11 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/exception"
-	"github.com/Masred/dasar-golang/golang-restful-api/helper"
-	"github.com/Masred/dasar-golang/golang-restful-api/model/domain"
-	"github.com/Masred/dasar-golang/golang-restful-api/model/web"
-	"github.com/Masred/dasar-golang/golang-restful-api/repository"
+	"github.com/Masred/dasar-golang/golang-database-migration/exception"
+	"github.com/Masred/dasar-golang/golang-database-migration/helper"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/domain"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/web"
+	"github.com/Masred/dasar-golang/golang-database-migration/repository"
 	"github.com/go-playground/validator"
 )
 

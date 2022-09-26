@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/helper"
+	"github.com/Masred/dasar-golang/golang-database-migration/helper"
 )
 
 func NewDB() *sql.DB {

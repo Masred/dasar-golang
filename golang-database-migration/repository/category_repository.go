@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/Masred/dasar-golang/golang-restful-api/model/domain"
+	"github.com/Masred/dasar-golang/golang-database-migration/model/domain"
 )
 
 type CategoryRepository interface {

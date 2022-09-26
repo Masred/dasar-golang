@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/Masred/dasar-golang/golang-restful-api/controller"
-	"github.com/Masred/dasar-golang/golang-restful-api/exception"
+	"github.com/Masred/dasar-golang/golang-database-migration/controller"
+	"github.com/Masred/dasar-golang/golang-database-migration/exception"
 	"github.com/julienschmidt/httprouter"
 )
 
